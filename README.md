@@ -9,8 +9,8 @@ bidirectional MAVLink communication with DS.Iridium9603.Uxs.Control over
 an Iridium Short Burst Data (SBD) link.
 
 DS.Iridium9603.Uxs.Vehicle enables ArduPilot to transmit HIGH_LATENCY2
-messages and receive MAVLink commands from QGroundControl without requiring
-an Internet connection.
+messages and receive MAVLink commands from QGroundControl using 
+RockBLOCK9603-to-RockBLOCK9603 direct messaging.
 
 -------------------------------------------------------------------------------
 
@@ -41,7 +41,8 @@ Communication Flow
     QGroundControl
 
 Communication is bidirectional. ArduPilot transmits HIGH_LATENCY2 messages
-to QGroundControl, while QGroundControl sends MAVLink commands to ArduPilot.
+to QGroundControl at a configured interval, while QGroundControl sends 
+MAVLink commands to ArduPilot.
 
 -------------------------------------------------------------------------------
 
